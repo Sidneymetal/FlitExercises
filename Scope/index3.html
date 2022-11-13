@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang=>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function confirmarDados(nome) {
+            var nomeCompleto = nome + ' da Silva'
+            function getAnoNascimento() {
+                var idade = 20;
+                var ano = 2022 - idade;
+                return ano;
+            }
+
+            console.log('nome completo', nomeCompleto);
+            console.log('ano de nascimento', getAnoNascimento().ano);
+            console.log('idade', idade);
+        }
+
+        try {
+            confirmarDados()
+        } catch (error) {
+            console.log("Um erro foi encontrado e não foi possível concluir a operação.")
+        }
+
+        confirmarDados('Marcos')
+
+
+    </script>
+
+</body>
+
+</html>
