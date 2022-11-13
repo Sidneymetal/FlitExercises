@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang=>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // Exercício 1     
+
+        var name, password;
+
+        function loggin() {
+            name = prompt("Digite seu nome: ")
+            document.write("Bem vindo, ", name, "!");
+            password = prompt("Digite sua senha: ")
+        }
+
+        console.log(loggin());
+
+        // Exercício 2
+
+        function loggin2() {
+            var name2 = prompt("Digite seu nome: ")            
+            var password2 = prompt("Digite sua senha: ")
+
+            if (name === name2 && password === password2) {
+                console.log(true)
+            } else {
+                console.log(false)
+            }
+        }
+
+        loggin2()
+        
+        // Exercício 3
+
+        console.log(loggin)
+        console.log(loggin2)
+
+    </script>
+
+</body>
+
+</html>
