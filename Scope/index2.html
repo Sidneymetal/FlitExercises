@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang=>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function confirmarDados(nome) {
+            var nomeCompleto = nome + ' da silva';
+            var geracao = 'millenium';
+
+            function getAnoNascimento() {
+                let idade = 40;
+                let ano = 2022 - idade;
+                return {
+                    idade, ano
+                }
+            }
+            const anoDeNascimento = getAnoNascimento().ano;
+            if (anoDeNascimento <= 1995) {
+                geracao = 'Geração X';
+            }
+
+            console.log('nome completo', nomeCompleto);
+            console.log('ano de nascimento', getAnoNascimento().ano);
+            console.log('idade', geracao);
+        }
+
+        confirmarDados('Marcos')
+
+    </script>
+
+</body>
+
+</html>
