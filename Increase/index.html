@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang=>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function calcularSalario() {
+
+            var salario = parseFloat(prompt("Digite seu salário:"))
+            salario
+            var valor1 = (salario <= 1500)
+            var valor2 = (salario >= 1501 && salario <= 2000)
+            var valor3 = (salario >= 2001 && salario <= 3000)
+            var valor4 = (salario > 3000)
+
+            switch (valor1, valor2, valor3, valor4) {
+                case valor1:
+                    console.log("Seu salário é menor.", salario);
+                    break;
+                case valor2:
+                    console.log("Seu salário é médio.", salario)
+                    break;
+                case valor3:
+                    console.log("Seu salário é alto.", salario)
+                    break;
+                case valor4:
+                    console.log("Seu salário é altísimo.", salario)
+                    break;
+            }
+        }
+
+        calcularSalario()
+
+
+
+        // function calcularSalario() {
+
+        //     var salario = parseFloat(prompt("Digite seu salário:"))
+
+        //     valorDiferenca = (salario <= 1500) ||
+        //         (salario >= 1501 && salario <= 2000) ||
+        //         (salario >= 2001 && salario <= 3000) ||
+        //         (salario > 3000);
+
+
+
+        //     switch (salario) {
+        //         case 1:
+        //             console.log("Seu salário é menor.", salario);
+        //             break;
+        //         case 2:
+        //             console.log("Seu salário é médio.", salario)
+        //             break;
+        //         case 3:
+        //             console.log("Seu salário é alto.", salario)
+        //             break;
+        //             default:
+        //             console.log("Seu salário é altísimo.", salario)
+        //             break;
+        //     }
+        // }
+
+        // calcularSalario()
+
+
+
+
+
+    </script>
+</body>
+
+</html>

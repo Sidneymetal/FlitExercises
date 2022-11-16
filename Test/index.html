@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang=>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        function aumentarSalario() {
+
+            var salario;
+            var salarioNovo;
+            var aumento;
+
+            salario = parseFloat(prompt("Digite o Salário base: ") + ".");
+
+            if (salario <= 1500) {
+                aumento = (salario * 20 / 100);
+                salarioNovo = aumento + salario;
+                alert("Salário Antes do Reajuste: R$ " + salario.toFixed(2) + ".\n-- Aumento Aplicado 20% ----\nValor do Aumento: R$ " + aumento.toFixed(2) + ".\nSalário Após o Aumento: R$ " + salarioNovo.toFixed(2) + ".");
+            }
+
+            else if (salario > 1501 && salario <= 2000) {
+                aumento = (salario * 15 / 100);
+                salarioNovo = aumento + salario;
+                alert("Salário Antes do Reajuste: R$ " + salario.toFixed(2) + ".\n-- Aumento Aplicado 15% --\nValor do Aumento: R$ " + aumento.toFixed(2) + ".\nSalário Após o Aumento: R$ " + salarioNovo.toFixed(2) + ".");
+            }
+
+            else if (salario > 2001 && salario <= 3000) {
+                aumento = (salario * 10 / 100);
+                salarioNovo = aumento + salario;
+                alert("Salário Antes do Reajuste: R$ " + salario.toFixed(2) + ".\n-- Aumento Aplicado 10% --\nValor do Aumento: R$ " + aumento.toFixed(2) + ".\nSalário Após o Aumento: R$ " + salarioNovo.toFixed(2) + ".");
+            }
+
+            else {
+                aumento = (salario * 5 / 100);
+                salarioNovo = aumento + salario;
+                alert("Salário Antes do Reajuste: R$ " + salario.toFixed(2) + ".\n-- Aumento Aplicado 5% --\nValor do Aumento: R$ " + aumento.toFixed(2) + ".\nSalário Após o Aumento: R$ " + salarioNovo.toFixed(2) + ".");
+            }
+
+        }
+
+        aumentarSalario()
+
+    </script>
+</body>
+
+</html>

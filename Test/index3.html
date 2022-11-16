@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        var salario = parseFloat(prompt("Digite o salário base:"))
+
+        var menor = parseFloat(menor)
+        var maior = parseFloat(maior)
+        var percentual = parseFloat(percentual)
+        var porcentagem
+
+        function aumentoSalario(maior, menor, percentual, porcentagem) {
+
+            if (salario > menor && salario <= maior) {
+
+                aumento = (percentual) * salario
+                salario = (salario + aumento)
+
+                console.log("Novo salario: " + salario.toFixed(2))
+                console.log("Reajuste ganho: " + aumento.toFixed(2))
+                console.log("Em percentual: " + porcentagem)
+            }
+        }
+
+        aumentoSalario(1500, 0, 0.15, "20%")
+        aumentoSalario(2000, 1501.01, 0.15, "15%")
+        aumentoSalario(3000, 2000.01, 0.10, "10%")
+        aumentoSalario(1000000000000, 3000.01, 0.05, "5%")
+
+    </script>
+</body>
+
+</html>
