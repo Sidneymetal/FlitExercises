@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang=>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        const { round } = Math;
+
+        const calcularAumento = valorBase => {
+            try {
+                valorBase = valorBase.toFixed();
+
+                const caso = round(valorBase / 1000) == 1
+                    ? round(valorBase / 1000)
+                    : round(valorBase / 1000 + .5);
+
+                const aplicarAumentoDe = valor =>
+                    valorBase = (valorBase * valor).toFixed();
+
+                switch (caso) {
+                    case 1:
+                        aplicarAumentoDe(0.20)
+                        console.log("Seu aumento foi de 20%:", valorBase);
+                        break;
+                    case 2:
+                        aplicarAumentoDe(0.15)
+                        console.log("Seu aumento foi de 15%:", valorBase);
+                        break;
+                    case 3:
+                        aplicarAumentoDe(0.10)
+                        console.log("Seu aumento foi de 10%:", valorBase);
+                        break;
+                    default:
+                        aplicarAumentoDe(0.5)
+                        console.log("Seu aumento foi de 5%:", valorBase);
+                        break;
+                }
+                return valorBase;
+            } catch (error) {
+                console.log("Só aceitamos números!");
+            };
+        };
+
+        calcularAumento(1000);
+
+
+    </script>
+</body>
+
+</html>
